@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Sistema de gestion de usuarios</title>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Sistema de gestion de usuarios</h1>
+    <hr>
+    <h2>Actualizar Usuario</h2>
+
+    <form action="#" th:action="@{/saveUsuario}" th:object="${usuario}" method="POST">
+
+        <input type="hidden" th:field="*{id}"/>
+
+        <input type="text" th:field="*{nombre}" class="form-control mb-4 col-4" placeholder="Nombre">
+
+        <input type="text" th:field="*{apellido}" class="form-control mb-4 col-4" placeholder="Apellido">
+
+        <select class="form-control mb-4 col-4" th:field="*{rol}" >
+            <option th:value="'Admin'" th:text="Admin"></option>
+            <option th:value="'Daca'" th:text="Daca"></option>
+        </select>
+
+        <input type="text" th:field="*{email}" class="form-control mb-4 col-4" placeholder="Correo">
+
+        <input type="text" th:field="*{telefono}" class="form-control mb-4 col-4" placeholder="Telefono">
+
+        <input type="password" th:field="*{password}" class="form-control mb-4 col-4" placeholder="************************">
+
+        <button type="submit" class="btn btn-info col-2"> Actualizar Usuario</button>
+    </form>
+
+    <hr>
+
+    <a th:href="@{/listusuario}"> Volver a la lista de usuarios</a>
+</div>
+</body>
+</html>

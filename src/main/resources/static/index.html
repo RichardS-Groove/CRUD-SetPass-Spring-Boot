@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es" class="animated fadeIn">
+
+<head>
+    <title>Iniciar Sesión</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min4.3.1.css">
+    <link rel="stylesheet" type="text/css" href="vendor/fontawesome-free-5.7.2-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/global-settings.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/colors.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+
+</head>
+
+<body>
+
+<section class="login-form common-form bg-image flex-centering">
+    <div class="container-fluid">
+        <div class="meta">
+            <div class="row">
+                <div class="col-sm-5 col-md-4 col-lg-3 ml-sm-auto pr-sm-0">
+                    <div class="white-box left-side sh-above">
+                        <img src="img/x2.png" alt="logo-img" class="img-fluid animated fadeInDown">
+                    </div>
+                </div>
+                <div class="col-sm-7 col-md-5 col-lg-4 mr-sm-auto pl-sm-0">
+                    <div class="white-box sh-above flex-centering">
+                        <form>
+                            <h4>Iniciar Sesión</h4>
+                            <div class="form-group mt">
+                                <input type="email" class="form-control animated fadeInDown" id="txtemail"
+                                       aria-describedby="emailHelp" placeholder="Ingrese correo electrónico" required>
+                            </div>
+                            <div class="form-group mt">
+                                <select type="rol" class="form-control animated fadeInDown" id="txtrol">
+                                    <option>Admin</option>
+                                    <option>Daca</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control animated fadeInDown"
+                                       id="txtpassword" aria-describedby="passwordHelp"
+                                       placeholder="Ingrese la contraseña" required>
+                            </div>
+                            <div class="custom-control custom-checkbox animated fadeInDown">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" required>
+                            </div>
+                            <ul class="list-unstyled animated fadeInDown list-inline info">
+                                <li class="list-inline-item">
+                                    <a href="resetpassword.html" class="new-acc">¿Has olvidado tu
+                                        contraseña?</a>
+                                </li>
+                                <li><a onclick="iniciarSession()" href="#" type="submit" class="btn d-block">Iniciar
+                                    Sesión</a></li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="sh-above">
+            <p>Proyecto <span>Grupo DACA</span></p>
+        </footer>
+    </div>
+</section>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min4.3.1.js"></script>
+
+<script src="js/index.js"></script>
+
+
+</body>
+
+</html>
